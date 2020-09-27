@@ -1,0 +1,123 @@
+%flex {
+  display: flex;
+}
+
+div,
+span {
+  cursor: pointer;
+
+}
+
+.btns-wrapper,
+.matrix {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col-sum,
+.rows {
+  @extend %flex;
+  justify-content: center;
+}
+
+.col-idx,
+.col {
+  width: 100px;
+  height: 100px;
+  @extend %flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999999;
+  font-size: 24px;
+}
+
+.col-idx {
+  margin-left: 20px;
+}
+
+.col-sum {
+  margin-top: 20px;
+  margin-left: -122px;
+}
+
+.hover {
+  background-color: gold;
+}
+
+.col-wrapper {
+  position: relative;
+}
+
+.pers {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  margin: 0;
+  width: 60%;
+  height: 50%;
+  font-size: 20px;
+  background-color: crimson;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+
+.col-wrapper:hover {
+  background-color: grey;
+}
+
+.wrapper {
+  @extend %flex;
+
+  width: 150px;
+
+  input {
+    width: 50px;
+    margin: 10px 0;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px auto;
+  }
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  background-color: crimson;
+  color: white;
+  border-radius: 2px;
+  border: 1px solid #999999;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.col:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 1px;
+  background-color: royalblue;
+}
+
+.row {
+  @extend %flex;
+  width: 100%;
+
+  button {
+    margin-right: 40px;
+  }
+}
+
+.wrapper-matrix {
+  @extend %flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rows-btns {
+  flex-direction: row;
+}
